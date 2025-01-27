@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gamified Task Manager</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header with User Info -->
+    <header class="header">
+      <h1>Gamified Task Manager</h1>
+      <div class="user-info">
+        <div class="avatar-selector">
+          <div class="avatar" id="avatar-1"></div>
+          <div class="avatar" id="avatar-2"></div>
+          <!-- Add 60 avatars -->
+        </div>
+        <div class="profile-stats">
+          <p>XP: <span id="xp">0</span>/100</p>
+          <p>Level: <span id="level">1</span></p>
+          <p>Health: <span id="health">100</span></p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Task Categories -->
+    <section class="task-categories">
+      <div class="task-category" id="todo">
+        <h3>To-Do</h3>
+        <ul id="todo-list">
+          <!-- Tasks will be listed here -->
+        </ul>
+        <button class="add-task" id="add-todo">Add Task</button>
+      </div>
+      <div class="task-category" id="habits">
+        <h3>Habits</h3>
+        <ul id="habit-list">
+          <!-- Habits will be listed here -->
+        </ul>
+        <button class="add-task" id="add-habit">Add Habit</button>
+      </div>
+      <div class="task-category" id="challenges">
+        <h3>Challenges</h3>
+        <ul id="challenge-list">
+          <!-- Challenges will be listed here -->
+        </ul>
+        <button class="add-task" id="add-challenge">Add Challenge</button>
+      </div>
+    </section>
+
+    <!-- Shop for in-app purchases -->
+    <section class="shop">
+      <h3>Shop</h3>
+      <button class="buy-item" id="buy-item">Buy Item</button>
+    </section>
+
+    <!-- Task Details -->
+    <div class="task-modal" id="task-modal">
+      <h4>Add New Task</h4>
+      <input type="text" id="task-name" placeholder="Task Name">
+      <textarea id="task-details" placeholder="Task Details"></textarea>
+      <button id="save-task">Save Task</button>
+      <button id="close-modal">Close</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
